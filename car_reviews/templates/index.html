@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>API Interaction</title>
+		{% load static %}
+		<script defer src="{% static 'js/api-interaction.js' %}"></script>
+		<!-- Подключаем JS для взаимодействия с API -->
+	</head>
+	<body>
+		<h1>Car Reviews</h1>
+
+		<!-- Кнопка для загрузки данных -->
+		<button id="loadDataButton">LOAD DATA</button>
+
+		<!-- Секция для отображения данных -->
+		<div id="dataContainer"></div>
+
+		<!-- Форма для добавления новой записи (например, новой машины) -->
+		<form id="addCarForm">
+			<input type="text" id="carName" placeholder="Enter car name" required />
+			<button type="submit">Add Car</button>
+		</form>
+	</body>
+</html>
